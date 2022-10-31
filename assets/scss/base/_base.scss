@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include media(tab-port) {
+        font-size: 50%
+    }
+}
+
+body {
+    @include set-background($clr-white);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem; //clamp(1.2rem, 2vw, 1.6rem);
+    line-height: 1.8;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-80 {
+    width: 80%;
+    margin: 0 auto
+}
+
+.hero {
+    height: 80vh;
+    overflow: hidden;
+    background-color: $clr-tertiary;
+    position: relative;
+    z-index: -2;
+}
+
+.hero__box {
+    position: relative;
+}
+
+.hero__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    // left: -50rem;
+    right: -22%;
+    z-index: -1;
+}
+
+.hero__display {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // mix-blend-mode: darken;
+    mix-blend-mode: multiply;
+}
+
+.pre-heading {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: $clr-primary;
+}
+
+.hero-heading {
+    font-size: 7.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        height: 1rem;
+        position: absolute;
+        bottom: -2rem;
+
+    }
+
+    &::before {
+        left: 0;
+        right: 95%;
+        background-color: $clr-primary;
+    }
+
+    &::after {
+        right: 46%;
+        left: 7%;
+        background-color: $clr-secondary;
+    }
+}
+
+.heading {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+
+
+.about__img {
+    width: 30.83rem;
+    height: 38rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        border: .5rem solid $clr-primary;
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        right: 2rem;
+        bottom: 1rem;
+        // height: 100%;
+        // width: 100%;
+        z-index: -10;
+    }
+}
+
+.catalog {
+    @include background-image;
+    background-color: $clr-tertiary;
+    color: $clr-white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        background-color: rgba(0, 0, 0, .6);
+        mix-blend-mode: multiply;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.action__img {
+    background-color: $clr-tertiary;
+}
+
+.location {
+
+    &__card {
+        border-bottom: 2px solid $clr-primary;
+        margin-bottom: 2rem;
+    }
+
+    &__marker {
+        width: 6rem;
+    }
+
+    &__display {
+        margin-left: 1rem;
+
+    }
+
+    &__counter {
+        min-width: 10rem;
+        font-size: 5rem;
+        line-height: 1;
+        font-weight: 600;
+        text-align: center;
+        @include set-background($clr-primary);
+        padding: 1rem;
+    }
+
+    &__name {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &__addres {
+        font-size: 1.4rem;
+    }
+
+}
+
+.contact-info {
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    line-height: 1.5;
+    margin-top: 1rem;
+
+    a {
+        color: $clr-secondary;
+
+        &:hover {
+            color: $clr-primary;
+        }
+    }
+}
+
+.contact-icon {
+    color: $clr-secondary;
+    font-size: 30px;
+}

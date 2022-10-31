@@ -1,0 +1,38 @@
+.sidebar-btn-menu {
+    position: absolute;
+    right: 4rem;
+    top: 3rem;
+}
+
+#sidebar {
+    color: $clr-primary;
+    right: 2rem;
+    @include set-background($clr-white);
+
+    #dismiss {
+        @include set-background($clr-primary);
+    }
+
+    .sidebar-header {
+        background-color: $clr-white;
+        border-bottom: .5rem solid $clr-secondary;
+
+        .logo {
+            width: 12rem;
+        }
+    }
+
+    ul li:not(:last-child) {
+        border-bottom: 1px solid $clr-secondary;
+    }
+
+    ul li a {
+        font-size: 1.6rem;
+        color: $clr-primary;
+        padding: 1rem;
+    }
+
+    ul li a:hover {
+        color: $clr-secondary;
+    }
+}

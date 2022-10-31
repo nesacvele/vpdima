@@ -1,0 +1,118 @@
+// Set text color based on bg
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #222;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+// Margin & padding classes
+$spaceamounts: (
+    5,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}px;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}px 0;
+
+        @include media(tab-port) {
+            padding: #{$space / 2}px 0;
+        }
+    }
+
+    .mx-#{$space} {
+        margin: 0 #{$space}px;
+
+        @include media(tab-port) {
+            padding: 0 #{$space / 2}px;
+        }
+    }
+
+    .mt-#{$space} {
+        margin-top: #{$space}px;
+    }
+
+    .mr-#{$space} {
+        margin-right: #{$space}px;
+    }
+
+    .mb-#{$space} {
+        margin-bottom: #{$space}px;
+    }
+
+    .ml-#{$space} {
+        margin-left: #{$space}px;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}px;
+
+        @include media(tab-port) {
+            padding: #{$space / 2}px;
+        }
+    }
+
+    .py-#{$space} {
+        padding: #{$space}px 0;
+    }
+
+    .px-#{$space} {
+        padding: 0 #{$space}px;
+    }
+
+    .pt-#{$space} {
+        padding-top: #{$space}px;
+    }
+
+    .pr-#{$space} {
+        padding-right: #{$space}px;
+    }
+
+    .pb-#{$space} {
+        padding-bottom: #{$space}px;
+    }
+
+    .pl-#{$space} {
+        padding-left: #{$space}px;
+    }
+}
+
+
+// dividers
+$hightspace: (
+    10,
+    15,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+);
+
+@each $hight in $hightspace {
+    .divider-#{$hight} {
+        height: #{$hight}px;
+        clear: both;
+    }
+}

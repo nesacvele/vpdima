@@ -1,0 +1,50 @@
+.slider {
+    // border-top: 1.2rem solid $secondary;
+    color: $clr-white;
+    height: 60vh;
+
+    @include media(tab-land) {
+        height: 50vh;
+    }
+
+    &__item {
+        @include background-image;
+        position: relative;
+        padding: 6rem 0;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+
+        @include media(tab-land) {
+            height: 50vh;
+        }
+
+
+        &::before {
+            content: '';
+            background-color: $clr-primary;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            opacity: .6;
+        }
+    }
+
+    // .display-heading {
+    //     color: $white;
+    // }
+}
+
+.display {
+    width: 40%;
+    position: relative;
+    z-index: 2;
+
+    @include media(tab-land) {
+        width: 100%;
+    }
+}

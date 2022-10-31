@@ -1,0 +1,20 @@
+@mixin media($breakpiont) {
+    @if $breakpiont == xs {
+        @media only screen and (max-width: 360px) {@content};
+    }
+    @if $breakpiont == phone {
+        @media only screen and (max-width: 568px) {@content};
+    }
+    @if $breakpiont == tab-md {
+        @media only screen and (max-width: 767px) {@content};
+    }
+    @if $breakpiont == tab-port {
+        @media only screen and (max-width: 991px) {@content};
+    }
+    @if $breakpiont == tab-land {
+        @media only screen and (max-width: 1200px) {@content};
+    }
+    @if $breakpiont == desktop {
+        @media only screen and (min-width: 1200px) {@content};
+    }
+}

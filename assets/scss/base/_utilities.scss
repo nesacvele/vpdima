@@ -1,0 +1,21 @@
+.clr-primary {
+    color: $clr-primary
+}
+
+.clr-secondary {
+    color: $clr-secondary
+}
+
+
+
+.bg-primry {
+    @include set-background($clr-primary)
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.fw-600 {
+    font-weight: 600;
+}

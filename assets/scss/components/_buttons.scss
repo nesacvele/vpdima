@@ -1,0 +1,80 @@
+%btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 3.2rem;
+    margin: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .6s;
+
+    @include media(tab-port) {
+        font-size: 1.2rem;
+        padding: 0.6rem 2.2rem;
+    }
+}
+
+.btn-nav {
+    display: inline-block;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    padding: .5rem 2.5rem;
+    background-color: $clr-primary;
+    color: $clr-white;
+    transition: .6s;
+
+    &:hover {
+        background-color: $clr-primary;
+    }
+
+    &__icon {
+        transform: rotate(-90deg);
+        margin-left: 1rem;
+    }
+}
+
+.btn-modal {
+    display: inline-block;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    @include set-background($clr-white);
+    transition: .6s;
+
+    &:hover {
+        @include set-background($clr-secondary);
+    }
+
+    &__icon {
+        transform: rotate(-90deg);
+        margin-left: 1rem;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    @include set-background($clr-primary);
+
+    &:hover {
+        background-color: $clr-primary-light;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    @include set-background($clr-secondary);
+}
+
+.btn-third {
+    @extend %btn;
+    @include set-background($clr-tertiary);
+
+    &:hover {
+        background-color: $clr-tertiary;
+    }
+}

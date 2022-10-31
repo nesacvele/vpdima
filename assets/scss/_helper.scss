@@ -1,0 +1,257 @@
+/* CSS Document - Helper class */
+
+/** elements ******************************************************************/
+
+// a.link-footer:link    { color: #aaa; text-decoration: none; font-size: 12px; font-family: 'Roboto', Arial;}
+// a.link-footer:visited { color: #aaa; text-decoration: none; font-size: 12px; font-family: 'Roboto', Arial;}
+// a.link-footer:hover   { color: #fff; text-decoration: none; font-size: 12px; font-family: 'Roboto', Arial;}
+// a.link-footer:active  { color: #fff; text-decoration: none; font-size: 12px; font-family: 'Roboto', Arial;}
+
+
+
+.divider-underline {
+    margin: 25px auto;
+    height: 2px;
+    background-color: #CDBEB0;
+}
+
+.float-right {
+    float: right;
+}
+
+.image-background {
+    background-repeat: no-repeat !important;
+    background-position: center center;
+    background-size: contain;
+}
+
+.image-background-inner {
+    padding-top: 60%;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.col-padding-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.gutter-16.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutter-16>[class^="col-"],
+.gutter-0>[class^=" col-"] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.gutter-8.row {
+    margin-right: -4rem;
+    margin-left: -4rem;
+}
+
+.gutter-8>[class^="col-"],
+.gutter-0>[class^=" col-"] {
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.gutter-0.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.gutter-0>[class^="col-"],
+.gutter-0>[class^=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.no-border-radius {
+    border-radius: 0 !important;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+.align-right {
+    text-align: right !important;
+}
+
+.align-center {
+    text-align: center !important;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.align-center-sm-left {
+    text-align: center !important;
+}
+
+.align-left-sm-center {
+    text-align: left !important;
+}
+
+.align-right-sm-center {
+    text-align: right !important;
+}
+
+.align-right-md-center {
+    text-align: right !important;
+}
+
+.hide-xs {
+    display: block;
+}
+
+.hide-md {
+    display: block;
+}
+
+.hide-sm {
+    display: block;
+}
+
+.show-lg {
+    display: block;
+}
+
+.show-md {
+    display: none;
+}
+
+.show-sm {
+    display: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.page-loader {
+    display: none;
+}
+
+.page-loader-wrapper p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.data-loader-wrapper {
+    text-align: center;
+    font-weight: 500;
+}
+
+/** end elements **************************************************************/
+
+
+/** error page ****************************************************************/
+
+.error-content {
+    padding: 0 15px;
+    background-color: #332F37;
+}
+
+.error-content-inner {
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 0 30px 0;
+    text-align: center;
+}
+
+.error-logo {
+    text-align: center;
+}
+
+.error-logo img {
+    max-height: 150px;
+}
+
+.error-title {
+    font-size: 80px;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    font-family: "Rubik", Arial;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.error-description {
+    color: #fff;
+    text-align: center;
+}
+
+/** end error page ************************************************************/
+
+
+@media screen and (max-width: 1920px) {}
+
+/** max 1600  *****************************************************************/
+@media screen and (max-width: 1600px) {}
+
+/** max 1200  *****************************************************************/
+@media screen and (max-width: 1200px) {
+
+    .show-lg {
+        display: none;
+    }
+
+}
+
+/** max 992 *******************************************************************/
+@media screen and (max-width: 992px) {
+
+    .divider-30-md-15 {
+        height: 15px;
+        clear: both;
+    }
+
+    .hide-md {
+        display: none;
+    }
+
+    .show-md {
+        display: block;
+    }
+
+    .align-right-md-center {
+        text-align: center !important;
+    }
+}
+
+/** max 768 *******************************************************************/
+@media screen and (max-width: 768px) {
+    .show-sm {
+        display: block;
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .align-left-sm-center {
+        text-align: center !important;
+    }
+
+    .align-right-sm-center {
+        text-align: center !important;
+    }
+
+    .align-center-sm-left {
+        text-align: left !important;
+    }
+}
+
+/** max 576 *******************************************************************/
+@media screen and (max-width: 576px) {}
+
+/** max 420 *******************************************************************/
+@media screen and (max-width: 420px) {}

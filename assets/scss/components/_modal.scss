@@ -1,0 +1,37 @@
+.modal-content {
+    border: 0;
+    border-radius: 0;
+}
+
+.modal-header {
+    padding: 1.4rem 2rem !important;
+}
+
+.modal-title {
+    font-size: 1.8rem !important;
+    text-transform: uppercase !important;
+    color: #444;
+}
+
+.modal-body {
+    padding: 1.4rem 2rem !important;
+    font-size: clamp(1.4rem, 2vw, 1.4rem);
+}
+
+.btn-modal {
+    display: inline-block;
+    font-size: 1.4rem !important;
+    ;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: .5rem 1rem !important;
+    background-color: #f0f1f1 !important;
+    color: #555 !important;
+    -webkit-transition: .6s;
+    transition: .6s;
+}
+
+.btn-modal:hover {
+    background-color: #e7e7e7 !important;
+}

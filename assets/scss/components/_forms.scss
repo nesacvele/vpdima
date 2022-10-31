@@ -1,0 +1,90 @@
+.form-box {
+    padding: 6rem;
+    width: 80%;
+    box-shadow: 0 8px 20px 8px rgba(92, 104, 152, 0.1);
+
+    @include media(tab-port) {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+form {
+    .form-control {
+        background-color: $clr-tertiary;
+        border: none;
+        padding: 2rem;
+        color: $clr-primary;
+        font-size: 1.4rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.form-help-block {
+    color: $clr-secondary;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+[type="text"]::-webkit-input-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="email"]::-webkit-input-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="text"]:-moz-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="email"]:-moz-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="text"]::-moz-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="email"]::-moz-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="text"]:-ms-input-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="email"]:-ms-input-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="text"]::-ms-input-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="email"]::-ms-input-placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="text"]::placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
+
+[type="email"]::placeholder {
+    color: $clr-secondary-light;
+    opacity: .5;
+}
